@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
+	<link href="../static/bootstrap.min.css" rel="stylesheet">
+	<link href="../static/font-awesome.min.css" rel="stylesheet">
+	<link href="../static/templatemo-style.css" rel="stylesheet">
+       <style>
+		   body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-family: 'Overpass', sans-serif; letter-spacing: 0px; font-size: 17px; color: #8d8f90; font-weight: 400; line-height: 32px; background-color: #edefef; }
+h1, h2, h3, h4, h5, h6 { color: #25292a; margin: 0px 0px 10px 0px; font-family: 'Overpass', sans-serif; font-weight: 700; letter-spacing: -1px; line-height: 1; }
+h1 { font-size: 34px; }
+h2 { font-size: 22px; line-height: 38px;}
+h3 { font-size: 22px; line-height: 32px; }
+h4 { font-size: 20px; }
+h5 { font-size: 17px; }
+h6 { font-size: 12px; }
+
+p { margin: 0 0 20px; line-height: 1.7; }
+p:last-child { margin: 0px; }
+a { text-decoration: none; color: #8d8f90; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+a:focus, a:hover { text-decoration: none; color: #f85759; }
+
+.nikk{
+    background-color: blue;
+}
+.h22{
+    margin: 0 0 20px; line-height: 1.7;
+    font-size: 14px;
+    padding-left: 23.5%;
+}
+.page-header { background: url(https://easetemplate.com/free-website-templates/hike/images/pageheader.jpg)no-repeat; position: relative; background-size: cover; }
+.page-caption { padding-top: 170px; padding-bottom: 174px; }
+.page-title { font-size: 46px; line-height: 1; color: rgb(255, 255, 255); font-weight: 600; text-align: center; }
+
+.card-section { position:relative; bottom: 150px; }
+.card-block { padding: 30px; align-items: center;}
+.section-title { margin-bottom: 10px; position:relative; padding: 80px; background-color:#edefef; padding-left: 9.5%; }
+        
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: montserrat;
+  }
+  nav{
+    background: #1a242c;
+    height: 70px;
+    width: 100%;
+  }
+  label.logo{
+    color: #e84c3d;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background:#46525c;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+
+
+        </style>
+
+
+</head>
+<body>
+	<!-- Navbar-->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo" color="purple"><I><B>Dreamhomes 24X7</B></I></label>
+        <ul>
+          <li><a class="active" href=".\">Home</a></li>
+          <li><a href=".\about">About Us</a></li>
+          <li><a href=".\explore">Explore</a></li>
+          <li><a href=".\contact">Contact Us</a></li>
+          <li><a href=".\dashboard">Dashboard</a></li>
+        </ul>
+      </nav>
+    
+		<div class="container">
+			<div class="row">
+				<div class="tm-banner-text">
+					<div class="tm-banner-text-inner">
+						<h1 class="tm-banner-title">Dashboard</h1>
+						<p class="tm-banner-description">Welcome to Dreamhomes 24X7 Analysis </p>
+					</div>	
+				</div>			
+			</div>			
+		</div>			
+	<div class="container">
+		<div class="row">
+			<div class="boxes-container">
+				<div class="boxes-left">
+					<div class="box">
+						<div class="tm-block-1 tm-text-block content">
+							<h2 class="tm-h2">Featured Collections</h2>
+							<p class="text-justify tm-gray-text">Handpicked collections of flats in Gurugram</p>
+						</div>	
+					</div>
+					<div class="box">
+						<img src="../static/a7.png" alt="Features" class="tm-block-1 content">	
+					</div>					
+					<div class="box">
+						<a href=".\" class="content">
+							<div class="tm-block-1 tm-text-block tm-blue-box">
+								<h3 class="text-uppercase">Website Visits: 17k Users: 3M</h3>
+							</div>	
+						</a>	
+					</div>
+					<div class="box">
+						<div class="tm-block-1 tm-text-block content">
+							<h2 class="tm-h2">Dreamhomes 24X7</h2>
+							<p class="text-justify tm-gray-text">The most rewarding destination for all home related services.</p>
+						</div>	
+					</div>	
+				</div>
+				<div class="boxes-right">
+					<div class="box col-lg-push-6 col-md-push-6 col-sm-push-6 col-xs-push-6">
+						<img src="../static/a6.png" alt="Features" class="tm-block-1 content">	
+					</div>					
+					<div class="box col-lg-pull-6 col-md-pull-6 col-sm-pull-6 col-xs-pull-6">
+						<div class="tm-block-1 tm-text-block content">
+							<h2 class="tm-h2">TRENDING PROJECTS</h2>
+							<p class="text-justify tm-gray-text">Most sought after projects in INDIA.</p>
+						</div>	
+					</div>					
+					<div class="box">
+						<a href=".\" class="content">
+							<div class="tm-block-1 tm-text-block tm-red-box">
+								<h3 class="text-uppercase">Property Predictions</h3>
+							</div>	
+						</a>			
+					</div>
+					<div class="box">
+						<div class="tm-block-1 tm-text-block content">
+							<h2 class="tm-h2">ML Algos used</h2>
+							<p class="text-justify tm-gray-text">LinearRegression, DecisionTree, RandomForest</p><p>Accuracy: 84%</p>
+						</div>	
+					</div>	
+				</div>
+			</div>		
+		</div>
+		<div class="row">
+			<div class="tm-block-2-container">				
+				<div class="tm-block-2 tm-block-order-2">
+					<a href="#">
+						<img src="../static/a1.png" alt="Features" class="img-responsive width-100-p">
+					</a>
+					<div class="tm-footer-block tm-blue-box tm-footer-text-container">
+						<h3 class="tm-footer-text-title">Find your comfort!</h3>
+					</div>
+				</div>
+				<div class="tm-block-2 tm-block-order-1">
+					<a href="#">
+						<div class="tm-position-relative">
+							<img src="../static/a2.png" alt="Features" class="img-responsive width-100-p">	
+							<div class="tm-block-2-text">
+								<p><span class="margin-right-20"><i class="fa fa-heart"></i> 72</span><i class="fa fa-comment"></i> 68</p>
+								<p class="text-uppercase"></p>
+							</div>		
+						</div>						
+					</a>
+					<h2>
+					<p class="tm-footer-block tm-copyright-text">
+                    	Contact us : Dreamhomes24X7@gmail.com
+                    </p>
+					<h2>
+				</div>				
+			</div>				
+		</div>			  			  	
+	</div>
+	
+
+</body>
+</html>

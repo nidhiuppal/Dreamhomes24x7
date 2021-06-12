@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Explore with us!</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
+	<link href="../static/bootstrap.min.css" rel="stylesheet">
+	<link href="../static/font-awesome.min.css" rel="stylesheet">
+	<link href="../static/templatemo-style.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../templates/nik.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <!-- Required meta tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    
+
+    
+        <!-- Custom CSS-->
+        <link rel="stylesheet" href="{{url_for('static',filename='style3.css')}}" />
+    
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="../static/favicon.png" />
+       
+       <style>
+           body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-family: 'Overpass', sans-serif; letter-spacing: 0px; font-size: 17px; color: #8d8f90; font-weight: 400; line-height: 32px; background-color: #edefef; }
+h1, h2, h3, h4, h5, h6 { color: #25292a; margin: 0px 0px 10px 0px; font-family: 'Overpass', sans-serif; font-weight: 700; letter-spacing: -1px; line-height: 1; }
+h1 { font-size: 34px; }
+h2 { font-size: 22px; line-height: 38px;}
+h3 { font-size: 22px; line-height: 32px; }
+h4 { font-size: 20px; }
+h5 { font-size: 17px; }
+h6 { font-size: 12px; }
+
+p { margin: 0 0 20px; line-height: 1.7; }
+p:last-child { margin: 0px; }
+a { text-decoration: none; color: #8d8f90; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+a:focus, a:hover { text-decoration: none; color: #f85759; }
+
+.nikk{
+    background-color: blue;
+}
+.h22{
+    margin: 0 0 20px; line-height: 1.7;
+    font-size: 14px;
+    padding-left: 23.5%;
+}
+.page-header { background: url(https://easetemplate.com/free-website-templates/hike/images/pageheader.jpg)no-repeat; position: relative; background-size: cover; }
+.page-caption { padding-top: 170px; padding-bottom: 174px; }
+.page-title { font-size: 46px; line-height: 1; color: #fff; font-weight: 600; text-align: center; }
+
+.card-section { position:relative; bottom: 150px; }
+.card-block { padding: 30px; align-items: center;}
+.section-title { margin-bottom: 10px; position:relative; padding: 80px; background-color:#edefef; padding-left: 9.5%; }
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: montserrat;
+  }
+  nav{
+    background: #1a242c;
+    height: 70px;
+    width: 100%;
+  }
+  label.logo{
+    color: #e84c3d;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background:#46525c;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+
+
+        </style>
+
+
+</head>
+<body>
+   <!-- Navbar-->
+   <nav>
+	<input type="checkbox" id="check">
+	<label for="check" class="checkbtn">
+	  <i class="fas fa-bars"></i>
+	</label>
+	<label class="logo" color="purple"><I><B>Dreamhomes 24X7</B></I></label>
+	<ul>
+	  <li><a class="active" href=".\">Home</a></li>
+	  <li><a href=".\about">About Us</a></li>
+	  <li><a href=".\explore">Explore</a></li>
+	  <li><a href=".\contact">Contact Us</a></li>
+	  <li><a href=".\dashboard">Dashboard</a></li>
+	</ul>
+  </nav>	
+		<div class="container">
+			<div class="row">
+				<div class="tm-banner-text">
+					<div class="tm-banner-text-inner">
+						<h1 class="tm-banner-title">Predict Prices</h1>
+						<p class="tm-banner-description">Using our efficient Machine Learning Algotithms</p>
+					</div>	
+				</div>			
+			</div>			
+		</div>			
+	<div class="container">
+		<div class="row">
+			<div class="tm-blocks-container">
+				<div class="tm-home-left">
+					<div class="tm-2-columns">						
+						<div class="tm-home-block-small tm-img-text tm-position-relative tm-white-box">
+							<div class="tm-social-icons-container">
+								<a href="#"><i class="tm-social-icon fa fa-facebook"></i></a>
+								<a href="#"><i class="tm-social-icon fa fa-twitter"></i></a>
+								<a href="#"><i class="tm-social-icon fa fa-rss"></i></a>
+								<a href="#"><i class="tm-social-icon fa fa-google-plus"></i></a>
+							</div>
+							<h2 class="tm-h2">Rise Sky Bunglows</h2>
+							<p class="text-justify tm-gray-text">For sale</p>	
+						</div>
+						<div class="tm-home-block-small tm-position-relative">
+							<i class="fa fa-4x fa-caret-right tm-triangle-right"></i>
+							<img src="../static/home-1.png" alt="image" class="tm-home-img-1">	
+						</div>										
+					</div>					
+					<div class="tm-home-block-big tm-position-relative">
+						<div class="tm-red-box tm-img-overlay tm-img-overlay-1">
+							<p>Vastu Compliant homes Bangalore</p>	
+						</div>						
+						<img src="../static/home-3.jpg" alt="image" class="img-responsive">
+					</div>
+					<div class="tm-2-columns">						
+						<div class="tm-home-block-small tm-img-text tm-position-relative tm-white-box">
+							<div class="tm-social-icons-container">
+								<a href="#"><i class="tm-social-icon fa fa-facebook"></i></a>
+								<a href="#"><i class="tm-social-icon fa fa-twitter"></i></a>
+								<a href="#"><i class="tm-social-icon fa fa-rss"></i></a>
+								<a href="#"><i class="tm-social-icon fa fa-google-plus"></i></a>
+							</div>
+							<h2 class="tm-h2">Affordable Flats in Bangalore</h2>
+							<p>Flats Starting at 26L in Adarsh Nagar </p>
+						</div>				
+						<div class="tm-home-block-small tm-position-relative">
+							<img src="../static/home-5.jpg" alt="image" class="tm-home-img-1">		
+						</div>						
+					</div>
+				</div>			
+				<div class="tm-home-right">
+					<div class="tm-home-block-big tm-position-relative tm-home-img-big-2-container">
+						<div class="tm-blue-box tm-img-overlay tm-img-overlay-2">
+							<p>Smart villa DLF phase 2</p>	
+						</div>						
+						<img src="../static/home-2.jpg" alt="image" class="img-responsive">
+					</div>
+					<div class="tm-home-block-big tm-2-columns-tall">
+						<div class="col tm-intro-container tm-position-relative tm-white-box">
+							<div class="tm-social-icons-container">
+								<a href="#"><i class="tm-social-icon fa fa-facebook"></i></a>
+								<a href="#"><i class="tm-social-icon fa fa-twitter"></i></a>
+								<a href="#"><i class="tm-social-icon fa fa-rss"></i></a>
+								<a href="#"><i class="tm-social-icon fa fa-google-plus"></i></a>
+							</div>
+							<h2 class="tm-h2 tm-intro-title">Best areas to buy homes in Bangalore</h2>
+							<p class="tm-gray-text tm-intro-description">Basavanagudi, <span class="tm-blue-text"></span>Indiranagar, Jayanagar, Koramangala, Malleshwaram, Rajaji Nagar, Frazer Town, Sadashivanagar, HSR Layout, Bellundur </p>
+							<a href=".\" class="tm-button tm-blue-button margin-top-30">Predict</a>				
+						</div>
+						<div class="col tm-2-rows tm-2-rows-2">
+							<div class="tm-home-block-small tm-home-img-1-container">
+								<img src="../static/home-4.jpg" alt="image" class="tm-home-img-1">	
+							</div>							
+							<div class="tm-home-block-small padding-30 tm-dark-box tm-dark-box-img-text">
+								<h2 class="tm-h2 tm-dark-gray-text">Contact us for personalized service for real estate prices</h2>
+						        <a href=".\contact" class="tm-button tm-blue-button margin-top-15">Contact us</a>
+						    </div>	
+						</div>						
+					</div>					
+				</div>
+			</div>			
+		</div>		
+		  			  	
+	</div>
+
+
+</body>>
+</html>
